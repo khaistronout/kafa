@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.name }}. Semua hak dilindungi.</p>
+    <div class="footer-links">
+      {{ with .Site.Params.email }}<a href="mailto:{{ . }}">Email</a>{{ end }}
+      {{ with .Site.Params.github }}<a href="{{ . }}" target="_blank" rel="noopener">GitHub</a>{{ end }}
+      {{ with .Site.Params.linkedin }}<a href="{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+      {{ with .Site.Params.whatsapp }}<a href="{{ . }}" target="_blank" rel="noopener">WhatsApp</a>{{ end }}
+    </div>
+  </div>
+</footer>
+<script src="/js/main.js" defer></script>

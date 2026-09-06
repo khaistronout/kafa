@@ -1,0 +1,31 @@
+baseURL = 'https://kafa.web.id/'
+languageCode = 'id-id'
+title = 'Kafa'
+
+[params]
+  name = "Kafa"
+  role = "Digital Support & Web Developer"
+  email = "hi@kafa.web.id"
+  github = "https://github.com/username"
+  linkedin = "https://linkedin.com/in/username"
+  whatsapp = "https://wa.me/6282340501509"
+
+[[menu.main]]
+  name = "Tentang"
+  url = "/pages/tentang/"
+  weight = 1
+
+[[menu.main]]
+  name = "Proyek"
+  url = "/pages/proyek/"
+  weight = 2
+
+[[menu.main]]
+  name = "Blog"
+  url = "/posts/"
+  weight = 3
+
+[[menu.main]]
+  name = "Kontak"
+  url = "/pages/kontak/"
+  weight = 4

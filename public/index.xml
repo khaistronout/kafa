@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Kafa — Digital Support &amp; Web Developer on Kafa</title>
+		<link>http://localhost:1313/</link>
+		<description>Recent content in Kafa — Digital Support &amp; Web Developer on Kafa</description>
+		<generator>Hugo</generator>
+		<language>id-id</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Tulisan Pertama Saya</title>
+				<link>http://localhost:1313/posts/tulisan-pertama/</link>
+				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/posts/tulisan-pertama/</guid>
+				<description>&lt;p&gt;Isi tulisan lengkap di sini, bebas panjang, pakai markdown.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Kontak</title>
+				<link>http://localhost:1313/pages/kontak/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pages/kontak/</guid>
+				<description>&lt;ul&gt;&#xA;&lt;li&gt;Email: &lt;a href=&#34;mailto:hi@kafa.web.id&#34;&gt;hi@kafa.web.id&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;WhatsApp/Telepon: +62 823-4050-1509&lt;/li&gt;&#xA;&lt;li&gt;Domisili: Sekarbela, Kota Mataram&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>Proyek</title>
+				<link>http://localhost:1313/pages/proyek/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pages/proyek/</guid>
+				<description>&lt;h3 id=&#34;pokdarwis-desa-gili-indah&#34;&gt;Pokdarwis Desa Gili Indah&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Project Collaboration&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mendukung kebutuhan digital dalam rangkaian kegiatan dan ajang desa wisata terbaik yang diselenggarakan Kementerian Pariwisata.&lt;/p&gt;&#xA;&lt;h3 id=&#34;tramena-dive-center---gili-trawangan&#34;&gt;Tramena Dive Center - Gili Trawangan&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Project Collaboration&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Membangun website untuk Tramena Dive Center sesuai kebutuhan bisnisnya.&lt;/p&gt;&#xA;&lt;h3 id=&#34;website-portofolio--bisnis-freelance&#34;&gt;Website Portofolio &amp;amp; Bisnis (Freelance)&lt;/h3&gt;&#xA;&lt;p&gt;Membuat dan mengelola website portofolio serta website bisnis untuk kebutuhan personal maupun klien. Beberapa proyek dikerjakan dengan menjaga kerahasiaan identitas dan merek klien sesuai permintaan.&lt;/p&gt;&#xA;&lt;h3 id=&#34;digital--business-support--cv-locality-project&#34;&gt;Digital &amp;amp; Business Support — CV. Locality Project&lt;/h3&gt;&#xA;&lt;p&gt;&lt;em&gt;Freelance&lt;/em&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Tentang Saya</title>
+				<link>http://localhost:1313/pages/tentang/</link>
+				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/pages/tentang/</guid>
+				<description>&lt;p&gt;Saya Khairul Fata, lulusan &lt;strong&gt;S1 Manajemen&lt;/strong&gt; dari Universitas Pendidikan Mandalika (2022–2026) dengan IPK 3.79. Saya punya pengalaman di bidang administrasi, dukungan teknis, pemasaran, serta pembuatan website dan desain visual.&lt;/p&gt;&#xA;&lt;p&gt;Saya terbiasa mengelola dokumen dan data menggunakan Microsoft Office, berkoordinasi dengan klien maupun instansi, dan menyelesaikan pekerjaan berdasarkan kebutuhan lapangan. Saya juga aktif mengerjakan proyek freelance pembuatan website untuk klien dan organisasi pariwisata.&lt;/p&gt;&#xA;&lt;h3 id=&#34;pengalaman-kerja--magang&#34;&gt;Pengalaman Kerja &amp;amp; Magang&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Digital &amp;amp; Business Support — CV. Locality Project&lt;/strong&gt; &lt;em&gt;(Freelance)&lt;/em&gt;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

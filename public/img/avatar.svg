@@ -1,0 +1,19 @@
+<svg viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustrasi avatar">
+  <defs>
+    <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#c4b5fd"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#blobGrad)" d="M140 18c52 0 96 30 110 78 12 42-8 86-46 108-40 23-92 22-128-6-34-27-50-72-38-114 14-48 58-66 102-66Z"/>
+  <circle cx="140" cy="118" r="46" fill="#fef3f0"/>
+  <path d="M96 118a44 44 0 0 1 88 0v6a44 44 0 0 1-88 0Z" fill="#fef3f0"/>
+  <path d="M100 108c4-22 20-34 40-34s36 12 40 34c-10 4-20-8-40-8s-30 12-40 8Z" fill="#1e1b3a"/>
+  <circle cx="122" cy="118" r="4" fill="#1e1b3a"/>
+  <circle cx="158" cy="118" r="4" fill="#1e1b3a"/>
+  <path d="M126 136c6 6 22 6 28 0" stroke="#1e1b3a" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M70 240c8-38 34-60 70-60s62 22 70 60Z" fill="#312e81"/>
+  <path d="M118 182h44l-6 26h-32Z" fill="#f1f5f9"/>
+  <path d="M70 240c8-38 34-60 70-60l-8 20-14 4 10 36Z" fill="#3730a3"/>
+  <path d="M210 240c-8-38-34-60-70-60l8 20 14 4-10 36Z" fill="#3730a3"/>
+</svg>

@@ -1,0 +1,19 @@
+<header class="site-header" id="site-header">
+  <nav class="navbar">
+    {{ partial "logo.html" . }}
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="/"{{ if .IsHome }} class="is-active"{{ end }}>Home</a>
+      {{ range .Site.Menus.main }}
+      {{ $active := false }}
+      {{ if eq $.RelPermalink .URL }}{{ $active = true }}
+      {{ else if and (ne .URL "/") (strings.HasPrefix $.RelPermalink .URL) }}{{ $active = true }}
+      {{ end }}
+      <a href="{{ .URL }}"{{ if $active }} class="is-active"{{ end }}>{{ .Name }}</a>
+      {{ end }}
+    </div>
+  </nav>
+  <div class="nav-backdrop" id="navBackdrop"></div>
+</header>

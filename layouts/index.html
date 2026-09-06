@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+
+  {{ with .Params.hero }}
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">I'M <span class="badge-pill">{{ .badge }}</span></p>
+        <h1 class="hero-heading">{{ .heading_prefix }}<br>
+          <span class="rotating-text" data-words="{{ delimit .heading_words `|` }}">{{ index .heading_words 0 }}.</span>
+        </h1>
+        <p class="hero-intro">{{ .intro }}</p>
+        <div class="hero-actions">
+          <a href="/pages/kontak/" class="btn btn-primary">Hubungi Saya <span aria-hidden="true">→</span></a>
+          {{ with .cv }}<a href="{{ . }}" class="btn btn-ghost" download>Unduh CV</a>{{ end }}
+        </div>
+        {{ partial "social-icons.html" $ }}
+      </div>
+      <div class="hero-visual">
+        <img src="/img/foto-hero.png" alt="Foto {{ $.Site.Params.name }}" class="hero-avatar">
+        {{ if .stats }}
+        {{ range $i, $s := .stats }}
+        <div class="stat-bubble stat-bubble-{{ $i }}">
+          <strong class="js-counter" data-target="{{ $s.value }}">0</strong>
+          <span>{{ $s.label }}</span>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if .Params.services }}
+  <section class="section">
+    <p class="eyebrow-lead">✦ Layanan Saya</p>
+    <h2>Yang Bisa Aku Bantu</h2>
+    <p class="section-lead">Aku fokus bikin website dan bantu operasional digital kamu jalan lebih rapi dan efisien.</p>
+    <div class="grid grid-services-6">
+      {{ range .Params.services }}
+      <div class="card service-card reveal">
+        <div class="service-icon">{{ partial "icon.html" .icon }}</div>
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+        <a href="/pages/kontak/" class="card-link">Pelajari <span aria-hidden="true">→</span></a>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.about }}
+  <section class="section">
+    <div class="about-strip">
+      <div class="about-visual reveal">
+        <img src="/img/avatar.svg" alt="Foto {{ $.Site.Params.name }}">
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow-lead">✦ Tentang Saya</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .description }}</p>
+        <a href="{{ .link }}" class="card-link">Baca selengkapnya <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if .Params.projects }}
+  <section class="section section-alt">
+    <p class="eyebrow-lead">✦ Portofolio</p>
+    <h2>Proyek Terbaru</h2>
+    <p class="section-lead">Beberapa proyek yang pernah saya kerjakan.</p>
+    <div class="grid grid-projects">
+      {{ range .Params.projects }}
+      <div class="card project-card reveal">
+        {{ partial "mockup.html" .accent }}
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+        {{ if .tags }}
+        <div class="tags">
+          {{ range .tags }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+        {{ with .link }}<a href="{{ . }}" class="card-link" target="_blank" rel="noopener">Kunjungi <span aria-hidden="true">→</span></a>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <p class="section-more"><a href="/pages/proyek/">Lihat semua proyek →</a></p>
+  </section>
+  {{ end }}
+
+  {{ if .Params.education }}
+  <section class="section">
+    <p class="eyebrow-lead">✦ Pengalaman & Pendidikan</p>
+    <h2>Perjalanan Saya</h2>
+    <div class="grid grid-education">
+      {{ range .Params.education }}
+      <div class="card education-card reveal">
+        <p class="edu-period">{{ .period }}</p>
+        <h3>{{ .institution }}</h3>
+        <p class="edu-subtitle">{{ .subtitle }}</p>
+        <span class="edu-tag">{{ .tag }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if .Params.skills }}
+  <section class="section section-alt">
+    <p class="eyebrow-lead">✦ Keahlian</p>
+    <h2>Skill Saya</h2>
+    <div class="grid grid-skills">
+      {{ range .Params.skills }}
+      <div class="card skill-card reveal">
+        <span class="skill-badge">{{ substr .name 0 2 | upper }}</span>
+        <div>
+          <h3>{{ .name }}</h3>
+          <p class="skill-level">{{ .level }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if .Params.testimonials }}
+  <section class="section">
+    <p class="eyebrow-lead">✦ Testimoni</p>
+    <h2>Kata Klien</h2>
+    <div class="grid grid-testimonials">
+      {{ range .Params.testimonials }}
+      <div class="card testimonial-card reveal">
+        <p class="quote">&ldquo;{{ .quote }}&rdquo;</p>
+        <p class="testimonial-name">{{ .name }}</p>
+        <p class="testimonial-role">{{ .role }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.cta }}
+  <section class="cta">
+    <div class="cta-inner reveal">
+      <h2>{{ .title }}</h2>
+      <p>{{ .description }}</p>
+      <a href="/pages/kontak/" class="btn btn-primary">Mulai Diskusi <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ if .Content }}
+  <section class="section">
+    {{ .Content }}
+  </section>
+  {{ end }}
+
+  {{ partial "footer.html" . }}
+</body>
+</html>

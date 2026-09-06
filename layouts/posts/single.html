@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+
+  <section class="section page-section">
+    <div class="content-card">
+      <h2>{{ .Title }}</h2>
+      <p class="post-date"><em>{{ .Date.Format "2 January 2006" }}</em></p>
+      {{ .Content }}
+    </div>
+  </section>
+
+  {{ partial "footer.html" . }}
+</body>
+</html>
